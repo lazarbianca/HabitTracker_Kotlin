@@ -32,6 +32,13 @@ import java.time.LocalDate
 
 @Composable
 fun HabitInputForm(modifier: Modifier, state: HabitInputFormState, onEvent: (HabitInputFormEvent) -> Unit) {
+//    var title by remember { mutableStateOf("") }
+//    var description by remember { mutableStateOf("") }
+//    var category by remember { mutableStateOf(Category.UNSELECTED) }
+//    var startDate by remember { mutableStateOf(LocalDate.now()) }
+//    var goal by remember { mutableStateOf("") }
+//    var isForever by remember { mutableStateOf(false) } // State for the "forever" checkbox
+
     Column(
         modifier = modifier
             .fillMaxWidth()
@@ -171,8 +178,15 @@ fun CategoryDropdownMenu(
     }
 }
 
+// TODO: make the date selectable
 @Composable
 fun DatePickerField(date: LocalDate, onDateSelected: (LocalDate) -> Unit, label: String) {
     // Replace with actual date picker implementation
     Text("$label: ${date.toString()}")
 }
+
+//@Preview(showBackground = true)
+//@Composable
+//fun previewHabitInputForm(){
+//    HabitInputForm(Modifier)
+//}
