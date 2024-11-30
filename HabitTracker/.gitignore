@@ -1,0 +1,33 @@
+# Gradle files
+.gradle/
+build/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# Kotlin-specific files
+*.class
+*.jar
+*.war
+*.ear
+*.kts
+
+# Log and temporary files
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Ignore JAR, APK, and other binary files
+*.apk
+*.jar
+*.war
+*.ear
