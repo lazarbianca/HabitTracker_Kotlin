@@ -75,18 +75,9 @@ class HabitViewModel(
         repository.deleteHabit(habitId)
     }
 
-
-//    fun setSelectedHabit(habitId: UUID) {
-//        _selectedHabitId.value = habitId
-//    }
-//
-//    fun clearSelectedHabit() {
-//        _selectedHabitId.value = null
-//    }
-fun clearForm() {
-    state = HabitInputFormState()
-}
-
+    fun clearForm() {
+        state = HabitInputFormState()
+    }
 
     fun onEvent(event: HabitInputFormEvent){
         when(event){
