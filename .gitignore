@@ -1,33 +1,44 @@
-# Ignore Gradle build directory
+# Gradle
 .gradle/
 build/
+local.properties
 
-# IntelliJ IDEA project files
+# IntelliJ/Android Studio
 .idea/
 *.iml
 
-# Kotlin-specific files
+# User-specific
+.DS_Store
+*.swp
+*.swo
+
+# Android specific
+**/build/
+**/*.iml
+**/*.ipr
+**/*.iws
+**/gradle/**/build/
+
+# Kotlin/Java specific
 *.class
 *.jar
 *.war
 *.ear
-*.kts
 
-# Log and temporary files
+# Gradle Wrapper files should be included
+!/gradle/wrapper/gradle-wrapper.jar
+!/gradle/wrapper/gradle-wrapper.properties
+!/gradlew
+!/gradlew.bat
+
+# ProGuard
+proguard/
+
+# Log files
 *.log
-.DS_Store
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
+*.stacktrace
+*.hprof
 
 # OS generated files
 Thumbs.db
 .DS_Store
-
-# Ignore JAR, APK, and other binary files
-*.apk
-*.jar
-*.war
-*.ear
